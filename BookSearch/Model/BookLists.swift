@@ -16,7 +16,7 @@
 import Foundation
 
 // MARK: - TitleResponse
-struct TitleResponse: Codable {
+struct BookLists: Codable {
     let totalItems: Int
     let items: [Item]
 }
@@ -31,14 +31,14 @@ struct VolumeInfo: Codable {
     let title: String
     let authors: [String]
     let publishedDate: String
-    let imageLinks: ImageLinks
+//    let imageLinks: ImageLinks
 }
 
 // MARK: - ImageLinks
-struct ImageLinks: Codable {
-    let smallThumbnail, thumbnail: String
-}
-        
+//struct ImageLinks: Codable {
+//    let smallThumbnail, thumbnail: String
+//}
+//
         
 
 /*

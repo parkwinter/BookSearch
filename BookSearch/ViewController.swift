@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        NetworkManager.getBookInfos(search: "having") { booklists in
+            let items = booklists?.items ?? []
+            
+            if let result = booklists?.totalItems{
+                print("검색 값의 총 책 수는 : \(result) ")
+            }
+            
+        }
+        
     }
-
-
 }
 
